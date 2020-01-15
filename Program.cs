@@ -151,6 +151,31 @@ namespace _Trains
         return L;
         }
 
+        static Locomotive ReverseOrder (Locomotive L)
+        {
+            Locomotive reverse = new Locomotive();
+            reverse.setFirstRailCar(L.getFirstRailCar().clone());
+            RailCar first = reverse.getFirstRailCar();
+            first.setNext(null);
+
+            RailCar car = L.getFirstRailCar();
+            RailCar newCar = L.getFirstRailCar();
+
+            while (car.getNext() != null)
+            {
+                
+               newCar = car.getNext().clone();
+               newCar.setNext(first);
+               reverse.setFirstRailCar(newCar);
+               first = reverse.getFirstRailCar();
+
+               car = car.getNext();
+              
+            }
+
+            return reverse;
+        }
+
         static void PrintTrain(Locomotive train)
         {
             Write("\n");
@@ -169,11 +194,11 @@ namespace _Trains
             Locomotive l = new Locomotive();
            
             PassengerCar pc1 = new PassengerCar("PC",50);
-            PassengerCar pc2 = new PassengerCar("PC",55);
+            PassengerCar pc2 = new PassengerCar("PC",32);
             PassengerCar pc3 = new PassengerCar("PC",40);
                      
-            RestaurantCar rc1 = new RestaurantCar("RC",5);
-            RestaurantCar rc2 = new RestaurantCar("RCZ",45);
+            RestaurantCar rc1 = new RestaurantCar("RC",25);
+            RestaurantCar rc2 = new RestaurantCar("RC",20);
 
            // WriteLine($"{pc3.toString()}, {pc3.isProfitable()}");
            // pc3 = (PassengerCar) pc1.clone();
@@ -188,6 +213,9 @@ namespace _Trains
 
             PrintTrain(l);
             PrintTrain(RemoveUnprofitable(l));
+
+            l = ReverseOrder(l);
+            PrintTrain(l);
 
         
         }
