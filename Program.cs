@@ -14,8 +14,6 @@ namespace _Trains
         string name;
         RailCar next;
 
-        
-
         public RailCar(string name)
         {
             if ( name.Length < 2 ) 
@@ -82,9 +80,6 @@ namespace _Trains
             {
                 RailCar append = first;
                 bool insert = false;
-
-                // while (append.getNext() != null) append=append.getNext();
-                //append.setNext(newCar);
 
                 if (string.Compare(newCar.toString(), append.toString()) == -1)
                 {
