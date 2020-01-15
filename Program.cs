@@ -81,9 +81,9 @@ namespace _Trains
                 RailCar append = first;
                 bool insert = false;
 
-                if (string.Compare(newCar.toString(), append.toString()) == -1)
+                if (string.Compare(newCar.toString(), first.toString()) == -1)
                 {
-                    newCar.setNext(append);
+                    newCar.setNext(first);
                     first = newCar;
                 }
                 else
