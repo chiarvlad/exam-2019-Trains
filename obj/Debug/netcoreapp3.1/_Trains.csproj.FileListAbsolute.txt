@@ -1,0 +1,11 @@
+D:\___C-Sharp\_Trains\obj\Debug\netcoreapp3.1\_Trains.csprojAssemblyReference.cache
+D:\___C-Sharp\_Trains\obj\Debug\netcoreapp3.1\_Trains.AssemblyInfoInputs.cache
+D:\___C-Sharp\_Trains\obj\Debug\netcoreapp3.1\_Trains.AssemblyInfo.cs
+D:\___C-Sharp\_Trains\bin\Debug\netcoreapp3.1\_Trains.exe
+D:\___C-Sharp\_Trains\bin\Debug\netcoreapp3.1\_Trains.deps.json
+D:\___C-Sharp\_Trains\bin\Debug\netcoreapp3.1\_Trains.runtimeconfig.json
+D:\___C-Sharp\_Trains\bin\Debug\netcoreapp3.1\_Trains.runtimeconfig.dev.json
+D:\___C-Sharp\_Trains\bin\Debug\netcoreapp3.1\_Trains.dll
+D:\___C-Sharp\_Trains\bin\Debug\netcoreapp3.1\_Trains.pdb
+D:\___C-Sharp\_Trains\obj\Debug\netcoreapp3.1\_Trains.dll
+D:\___C-Sharp\_Trains\obj\Debug\netcoreapp3.1\_Trains.pdb
